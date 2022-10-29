@@ -1,4 +1,5 @@
 :root {
+    --white-color: #ffffff;
     --banner-subtext-color: #E6EBFF;
     --border-color: #DEDEDE;
     --body-text-color: #111637;
@@ -13,5 +14,5 @@
 }
 
 body {
-    background-color: var(--border-color);
+    background-color: var(--white-color);
 }
