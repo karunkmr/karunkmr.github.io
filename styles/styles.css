@@ -1,7 +1,17 @@
 :root {
-    --red-bg: red;
+    --banner-subtext-color: #E6EBFF;
+    --border-color: #DEDEDE;
+    --body-text-color: #111637;
+    --black-tet-color: #000000;
+    --circled-icon-color: #080F33;
+    --filter-bg-color: #FCF4F4;
+    --primary-color: #F82941;
+    --checkbox-active-color: #111637;
+    --checkbox-inactive-color: #D8CDCB;
+    --disabled-clear-filter-color: #D9C0BB;
+
 }
 
 body {
-    background-color: var(--red-bg);
+    background-color: var(--border-color);
 }
