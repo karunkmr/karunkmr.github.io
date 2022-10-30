@@ -2,4 +2,7 @@
     .container {
         max-width: 1280px;
     }
+    .container.page-container {
+        max-width: 1024px;
+    }
 }
