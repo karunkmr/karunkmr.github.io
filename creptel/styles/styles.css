@@ -48,6 +48,10 @@ nav .navbar-nav a.nav-link {
     font-weight: 500;
 }
 
+nav .navbar-nav a.nav-link:hover {
+    color: var(--primary-color);
+}
+
 nav .navbar-nav a.nav-link.active {
     color: var(--primary-color);
     font-weight: 500;
