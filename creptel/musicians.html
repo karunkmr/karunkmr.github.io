@@ -10,8 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@700&display=swap"
         rel="stylesheet">
     <!-- --------------------->
-
-    <link rel="stylesheet" href="fonts/icomoon/demo-files/demo.css" />
+    <link rel="stylesheet" href="fonts/all.min.css" />
+    <!-- <link rel="stylesheet" href="fonts/icomoon/demo-files/demo.css" /> -->
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -33,7 +33,7 @@
 <body>
     <main role="document">
         <header role="menubar">
-            <nav class="navbar navbar-expand-lg fixed-top" role="navigation">
+            <nav class="navbar navbar-expand-lg position-absolute w-100" role="navigation">
                 <div class="container">
                     <a class="navbar-brand" href="#">
                         <img src="images/creptel-Logo-white-crv3.svg" alt="" class="img-fluid" />
@@ -88,78 +88,258 @@
         </section>
         <section class="container page-container">
             <div class="row">
-                <aside class="col-lg-3">
+                <aside class="col-lg-4">
                     <div class="filter-panel">
                         <label class="filter-title">
-                            Filter <span class="badge rounded-pill">2 Filters Applied</span>
+                            <span>Filter</span> <span class="badge rounded-pill">2 Filters Applied</span>
                         </label>
                         <div class="filter-box">
-                            <div class="filter-box-header">
+                            <div class="filter-box-header" data-bs-toggle="collapse" data-bs-target="#skills"
+                                aria-expanded="true" aria-controls="skills">
                                 <label class="filter-box-title">Skill</label>
-                                <i class="icon icon-minus"></i>
+                                <i class="fa fa-minus"></i>
+                            </div>
+                            <div class="filter-box-content collapse show" id="skills">
+                                <ul>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" value="" />
+                                            <i class="far fa-square"></i>
+                                            <span>Vocal</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" value="" />
+                                            <i class="far fa-square"></i>
+                                            <span>Guitar</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" value="" />
+                                            <i class="far fa-square"></i>
+                                            <span>Electric Guitar</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" value="" />
+                                            <i class="far fa-square"></i>
+                                            <span>Music Composing and Production</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" value="" />
+                                            <i class="far fa-square"></i>
+                                            <span>Music Production</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                                <div class="clear-filters text-end">
+                                    <button type="button" class="btn btn-link">Clear Filter</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-box">
+                            <div class="filter-box-header">
+                                <label class="filter-box-title">Location</label>
+                                <i class="fa fa-minus"></i>
                             </div>
                             <div class="filter-box-content">
                                 <ul>
                                     <li>
                                         <label>
                                             <input type="checkbox" value="" />
-                                            <i class="icon icon-checkbox-unchecked"></i>
-                                            <span>Vocal</span>
+                                            <i class="far fa-square"></i>
+                                            <span>Avadi</span>
                                         </label>
                                     </li>
                                     <li>
                                         <label>
                                             <input type="checkbox" value="" />
-                                            <span>Vocal</span>
+                                            <i class="far fa-square"></i>
+                                            <span>Maduravoyal</span>
                                         </label>
                                     </li>
                                     <li>
                                         <label>
                                             <input type="checkbox" value="" />
-                                            <span>Vocal</span>
+                                            <i class="far fa-square"></i>
+                                            <span>Gummidipoondi</span>
                                         </label>
                                     </li>
                                     <li>
                                         <label>
                                             <input type="checkbox" value="" />
-                                            <span>Vocal</span>
+                                            <i class="far fa-square"></i>
+                                            <span>Ashok Nagar</span>
                                         </label>
                                     </li>
                                     <li>
                                         <label>
                                             <input type="checkbox" value="" />
-                                            <span>Vocal</span>
+                                            <i class="far fa-square"></i>
+                                            <span>Ashok Nagar</span>
                                         </label>
                                     </li>
                                     <li>
                                         <label>
                                             <input type="checkbox" value="" />
-                                            <span>Vocal</span>
+                                            <i class="far fa-square"></i>
+                                            <span>Ambattur</span>
                                         </label>
                                     </li>
-                                    <li>
-                                        <label>
-                                            <input type="checkbox" value="" />
-                                            <span>Vocal</span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label>
-                                            <input type="checkbox" value="" />
-                                            <span>Vocal</span>
-                                        </label>
-                                    </li>
-                                </ul>
 
+                                </ul>
+                                <div class="clear-filters text-end">
+                                    <button type="button" class="btn btn-link">Clear Filter</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </aside>
-                <div class="col-lg-9">
-
+                <section class="col-lg-8">
+                    <div class="content-heading">
+                        <div>
+                            <label>MUSICIANS LIST</label>
+                            <span>Result: 14 Jobs</span>
+                        </div>
+                        <button class="btn btn-danger">INVITE MUSICIANS</button>
+                    </div>
+                    <div class="cards-section">
+                        <div class="card">
+                            <div>
+                                <img src="images/musician-img.png" alt="" class="img-fluid" />
+                            </div>
+                            <div class="card-info">
+                                <label>Keba Jeremiah</label>
+                                <p>Guitarist at Indian Music Industry - OMR, Chennai</p>
+                                <p><span>Skills:</span> Bass Guitar, Guitar, Ukulele</p>
+                                <p><span>Here for:</span>Collaborate, Get Hired, Join a Band, Looking for O…</p>
+                            </div>
+                            <div>
+                                <a href="#" class="mail-link">
+                                    <i class="far fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div>
+                                <img src="images/musician-img.png" alt="" class="img-fluid" />
+                            </div>
+                            <div class="card-info">
+                                <label>Keba Jeremiah</label>
+                                <p>Guitarist at Indian Music Industry - OMR, Chennai</p>
+                                <p><span>Skills:</span> Bass Guitar, Guitar, Ukulele</p>
+                                <p><span>Here for:</span>Collaborate, Get Hired, Join a Band, Looking for O…</p>
+                            </div>
+                            <div>
+                                <a href="#" class="mail-link">
+                                    <i class="far fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div>
+                                <img src="images/musician-img.png" alt="" class="img-fluid" />
+                            </div>
+                            <div class="card-info">
+                                <label>Keba Jeremiah</label>
+                                <p>Guitarist at Indian Music Industry - OMR, Chennai</p>
+                                <p><span>Skills:</span> Bass Guitar, Guitar, Ukulele</p>
+                                <p><span>Here for:</span>Collaborate, Get Hired, Join a Band, Looking for O…</p>
+                            </div>
+                            <div>
+                                <a href="#" class="mail-link">
+                                    <i class="far fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div>
+                                <img src="images/musician-img.png" alt="" class="img-fluid" />
+                            </div>
+                            <div class="card-info">
+                                <label>Keba Jeremiah</label>
+                                <p>Guitarist at Indian Music Industry - OMR, Chennai</p>
+                                <p><span>Skills:</span> Bass Guitar, Guitar, Ukulele</p>
+                                <p><span>Here for:</span>Collaborate, Get Hired, Join a Band, Looking for O…</p>
+                            </div>
+                            <div>
+                                <a href="#" class="mail-link">
+                                    <i class="far fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div>
+                                <img src="images/musician-img.png" alt="" class="img-fluid" />
+                            </div>
+                            <div class="card-info">
+                                <label>Keba Jeremiah</label>
+                                <p>Guitarist at Indian Music Industry - OMR, Chennai</p>
+                                <p><span>Skills:</span> Bass Guitar, Guitar, Ukulele</p>
+                                <p><span>Here for:</span>Collaborate, Get Hired, Join a Band, Looking for O…</p>
+                            </div>
+                            <div>
+                                <a href="#" class="mail-link">
+                                    <i class="far fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section class="bottom-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <h1>Join us today and build a great music community!</h1>
+                        <p>Reach the peak in your music career by reading successful artist’s life stories, ample
+                            opportunities, and music sheets. Join us today so that you get notified of every update that
+                            is posted.</p>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="join-here">
+                            <label>Don’t Worry, Its <span>FREE</span></label>
+                            <button class="btn btn-danger">JOIN AS MUSICIAN</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+        <footer>
+            <nav class="navbar navbar-expand-lg" role="navigation">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/creptel-Logo-white-crv3.svg" alt="" class="img-fluid" />
+                    </a>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">JOBS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">MUSICIANS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">EVENTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <p class="container copyright">
+                &copy; 2020 CREPTEL. All rights reserved.
+            </p>
+        </footer>
     </main>
 
     <script src="scripts/jquery-3.6.1.slim.min.js"></script>
