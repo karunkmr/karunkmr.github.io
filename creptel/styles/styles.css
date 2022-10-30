@@ -75,11 +75,14 @@ nav.navbar-expand-lg .navbar-nav {
     font-size: 36px;
     line-height: 48px;
     max-width: 75%;
+    margin-top: 70px;
+    margin-bottom: 14px;
 }
 
 .sub-text {
     color: var(--banner-subtext-color);
     font-size: 20px;
+    line-height: 28px;
 }
 
 .musicians-banner {
@@ -300,4 +303,8 @@ footer nav li a.nav-link {
     padding-top: 50px;
     padding-bottom: 50px;
     margin-bottom: 0px;
+}
+
+.top-nav {
+    margin-bottom: -15px;
 }
