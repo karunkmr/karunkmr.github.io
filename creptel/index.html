@@ -33,7 +33,7 @@
 
 <body>
     <main>
-        <header role="menubar" class="position-absolute w-100">
+        <header role="menubar" class="position-absolute w-100 d-none d-lg-block">
             <nav class="navbar navbar-expand-lg top-nav" role="navigation">
                 <div class="container">
                     <div class="collapse navbar-collapse">
@@ -53,10 +53,6 @@
                     <a class="navbar-brand" href="index.html">
                         <img src="images/creptel-Logo-white-crv3.svg" alt="" class="img-fluid" />
                     </a>
-                    <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button> -->
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
@@ -90,6 +86,55 @@
                 </div>
             </nav>
         </header>
+        <header role="menubar" class="position-absolute w-100 d-lg-none">
+            <nav class="navbar navbar-expand-lg" role="navigation">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/creptel-Logo-white-crv3.svg" alt="" class="img-fluid" />
+                    </a>
+                    <button class="navbar-toggler text-light" type="button">
+                        <i class="fas fa-bars"></i>        
+                    </button>
+                </div>
+            </nav>
+        </header>
+        <nav class="navbar navbar-expand-lg mobile-navigation" role="navigation">
+            <button class="">
+                
+            </button>
+            <div class="container">
+                <div class="navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="jobs.html">JOBS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="musicians.html">MUSICIANS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">EVENTS</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                RESOURCES
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ABOUT US</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <section class="top-banner musicians-banner">
             <div class="container">
                 <dv class="row">

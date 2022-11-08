@@ -376,3 +376,10 @@ footer nav li a.nav-link {
 .top-nav {
     margin-bottom: -15px;
 }
+
+.mobile-navigation {
+    background-color: var(--background-color);
+}
+nav .navbar-nav a.nav-link {
+
+}
