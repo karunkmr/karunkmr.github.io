@@ -1,24 +1,20 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { GoogleReCaptchaProvider, GoogleReCaptcha } from 'react-google-recaptcha-v3';
 
 function App() {
+
+  const handleVerify = () => {
+    alert("verified")
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <GoogleReCaptchaProvider reCaptchaKey="6LfqZsQjAAAAANfK729uhBksJRdmFJAxD47kmEc0">
+        <GoogleReCaptcha onVerify={() => handleVerify()} />
+      </GoogleReCaptchaProvider>
+    </>
   );
 }
 
